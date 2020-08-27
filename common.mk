@@ -297,6 +297,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250 \
     vendor.qti.hardware.perf@2.2.vendor
 
+# Performance
+PRODUCT_PACKAGES += \
+    powerctl
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
