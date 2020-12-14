@@ -36,4 +36,7 @@
      <!-- For Ultra Power Saving -->
      <bool name="config_supportUltraPowerSaving">true</bool>
 
+    <!-- Whether to show a preference item for mobile plan -->
+    <bool name="config_show_mobile_plan">false</bool>
+
 </resources>
