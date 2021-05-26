@@ -165,6 +165,10 @@ service vibrator_calibration /vendor/bin/vibrator_calibration
 on property:sys.boot_completed=1
     start vibrator_calibration
 
+    # Set up swap
+    write /sys/devices/virtual/block/vbswap0/disksize 3221225472
+    swapon_all /vendor/etc/fstab.qcom
+
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
